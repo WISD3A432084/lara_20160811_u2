@@ -14,6 +14,13 @@
 //Route::get('/', function () {
    // return view('welcome');
 //});
-Route::get("/",function (){
-    return 'welcome';
+
+//1.1回傳welcome
+//Route::get("/",function (){
+  //  return 'welcome';
+//});
+
+//1.2回傳view
+Route::get('/',function (){
+    return view('welcome');
 });
