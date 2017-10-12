@@ -22,5 +22,8 @@
 
 //1.2回傳view
 Route::get('/',function (){
-    return view('welcome');
+   // return view('welcome');
+
+    //1.3設定 Route 跳轉頁面
+    return 'welcome';
 });
