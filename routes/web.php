@@ -42,6 +42,12 @@
 //練習4：為 Route 命名
     //1. 將 Route 取名為 hello.index
     //3. 修改 Route 裡的路徑
-    Route::get('say/{name?}',['as' => 'hello.index',function ($name = 'Everybody'){
-        return view('welcome');
-    }]);
+    /*Route::get('say/{name?}',['as' => 'hello.index',function ($name = 'Everybody'){
+            return view('welcome');
+        }]);*/
+
+//練習5：設定Route 前置
+    //1. 設定 dashboard 路徑的 Route
+    Route::get('dashboard', function (){
+        return 'dashboard';
+    });
