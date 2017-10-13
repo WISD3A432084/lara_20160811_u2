@@ -21,9 +21,15 @@
 //});
 
 //1.2回傳view
-Route::get('/',function (){
+//Route::get('/',function (){
    // return view('welcome');
 
     //1.3設定 Route 跳轉頁面
-    return 'welcome';
-});
+    //return 'welcome';
+//});
+
+//練習2：設定Route接收參數
+    //1.修改 Route 接受參數
+    Route::get('hello/{name}', function($name) {
+        return 'Hello, '.$name;
+    });
