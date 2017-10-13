@@ -88,6 +88,8 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <!--練習4.2_在 view 上面就可以直接用 helper 產生 url-->
+                    <a href="{{route('hello.index')}}">Hello</a>
                 </div>
             </div>
         </div>
