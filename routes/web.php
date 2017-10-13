@@ -41,6 +41,7 @@
 
 //練習4：為 Route 命名
     //1. 將 Route 取名為 hello.index
-    Route::get('hello/{name?}',['as' => 'hello.index',function ($name = 'Everybody'){
-        return 'Hello, '.$name;
+    //3. 修改 Route 裡的路徑
+    Route::get('say/{name?}',['as' => 'hello.index',function ($name = 'Everybody'){
+        return view('welcome');
     }]);
