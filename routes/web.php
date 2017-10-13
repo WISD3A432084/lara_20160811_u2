@@ -35,6 +35,12 @@
         });*/
 
     //3.修改參數成選擇性
-    Route::get('hello/{name?}',function ($name = 'Everybody'){
+    /*Route::get('hello/{name?}',function ($name = 'Everybody'){
+            return 'Hello, '.$name;
+        });*/
+
+//練習4：為 Route 命名
+    //1. 將 Route 取名為 hello.index
+    Route::get('hello/{name?}',['as' => 'hello.index',function ($name = 'Everybody'){
         return 'Hello, '.$name;
-    });
+    }]);
