@@ -54,3 +54,7 @@
             return 'admin dashboard';
         });
     });
+
+//練習7：將 Route 的內容搬至 Controller 內
+    //1.
+    Route::get('/ ',['as' => 'home.index', 'uses' => 'HomeController@index']);
